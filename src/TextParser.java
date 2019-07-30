@@ -1,51 +1,51 @@
+/*
+ * 
+ * Assumptions
+ * - Output should be a list of all qualifying words along with their lengths in "word, length" format. 
+ * - A word in this case is any sequence of consecutive unbroken characters. We donÅft check to see if the word is real or not. A word should not contain special characters or numbers.  
+ * - The output should return at least one string with a value, length pair. If the output is empty, there were no words in the input and the function should throw an exception.
+ * - Generic exception is thrown for now. In a production environment a specific IllegalWordFormatException class or similar would be written and thrown to handle this exception. 
+ * - The exception is not handled in this class. Hypothetically this class would be instantiated and utilized by a larger logic class that would use it. In this case, that class would handle the exception. 
+ *
+ */
+
 import java.util.LinkedList;
 
 public class TextParser 
 {
-	/* 
-	 * Receives an input string and outputs a list of the longest words in that string along with its length.
-	 * @param sentence The input sentence should consist of more than one word. It should not include single letters, numbers, or special characters. 
-	 * @return		return a LinkedList<String> containing a list of the longest words, in the format of "word, length"
-	 */
+	//Receives an input string and outputs a list of the longest words in that string along with its length.
 	public LinkedList<String> parse(String sentence) throws Exception
 	{
 		int highestValue = -1; //Set the value to -1 so empty strings do not match. 
 
 		//opting for a linked list because the outcome size is unknown and it has more efficient add/remove than ArrayList
-		LinkedList<String> output = new LinkedList<String>(); 
-		
-		//Temporary array 
+		LinkedList<String> output = new LinkedList<String>(); //The return list		
 		LinkedList<String> formattedSentence = new LinkedList<String>(); //The input sentence with all numerals and punctuation removed. 
 		
 		//temporary var for storing formatted text before adding to formattedSentence 
 		String tempWord = ""; 		
-		
-		//Split the input sentence into an array of its words
+	
 		char[] words = sentence.toCharArray();
 		
-		//Loop through each character in the input sentence...
+		//Loop through each character in the input sentence and add extracted words to the formattedSentence array
 		for(int i = 0 ; i < words.length; i++)
 		{
-			//and add it to a temporary string if it is a letter..
 			if(Character.isLetter(words[i]))
 				tempWord+=words[i];
 			
-			//... or truncate the text and add it to the formattedSentence array...
 			else if(tempWord.length() != 0)
 			{
-				//updating the highest value var
 				if(tempWord.length() > highestValue)
 					highestValue = tempWord.length();
 
 				formattedSentence.add(tempWord);					
 				tempWord = "";
 			}
-			//... or ignore it.
 			else
 				continue;
 		}
 		
-		//Add all applicable strings to the output array
+		//Add the largest words to the output array.
 		for(String item : formattedSentence)
 		{
 			if(item.length() == highestValue)

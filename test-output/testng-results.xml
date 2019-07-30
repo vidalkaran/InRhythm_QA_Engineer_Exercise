@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="41" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+  <suite name="Suite" duration-ms="45" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="41" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+    <test name="Test" duration-ms="45" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
       <class name="TextParserTest">
-        <test-method status="PASS" signature="testBlankInput()[pri:0, instance:TextParserTest@1810399e]" name="testBlankInput" duration-ms="6" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+        <test-method status="PASS" signature="testBlankInput()[pri:0, instance:TextParserTest@1810399e]" name="testBlankInput" duration-ms="7" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
           <exception class="java.lang.Exception">
             <full-stacktrace>
               <![CDATA[java.lang.Exception
@@ -44,23 +44,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBlankInput -->
-        <test-method status="PASS" signature="testComplexNumericInput()[pri:0, instance:TextParserTest@1810399e]" name="testComplexNumericInput" duration-ms="2" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+        <test-method status="PASS" signature="testComplexNumericInput()[pri:0, instance:TextParserTest@1810399e]" name="testComplexNumericInput" duration-ms="2" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testComplexNumericInput -->
-        <test-method status="PASS" signature="testComplexSpecialCharacterInput()[pri:0, instance:TextParserTest@1810399e]" name="testComplexSpecialCharacterInput" duration-ms="1" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+        <test-method status="PASS" signature="testComplexSpecialCharacterInput()[pri:0, instance:TextParserTest@1810399e]" name="testComplexSpecialCharacterInput" duration-ms="1" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testComplexSpecialCharacterInput -->
-        <test-method status="PASS" signature="testMultipleParse()[pri:0, instance:TextParserTest@1810399e]" name="testMultipleParse" duration-ms="1" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+        <test-method status="PASS" signature="testMultipleParse()[pri:0, instance:TextParserTest@1810399e]" name="testMultipleParse" duration-ms="2" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultipleParse -->
-        <test-method status="PASS" signature="testOutputLengths()[pri:0, instance:TextParserTest@1810399e]" name="testOutputLengths" duration-ms="1" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+        <test-method status="PASS" signature="testOutputLengths()[pri:0, instance:TextParserTest@1810399e]" name="testOutputLengths" duration-ms="1" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOutputLengths -->
-        <test-method status="PASS" signature="testPlainNumericInput()[pri:0, instance:TextParserTest@1810399e]" name="testPlainNumericInput" duration-ms="1" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+        <test-method status="PASS" signature="testPlainNumericInput()[pri:0, instance:TextParserTest@1810399e]" name="testPlainNumericInput" duration-ms="1" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
           <exception class="java.lang.Exception">
             <full-stacktrace>
               <![CDATA[java.lang.Exception
@@ -97,7 +97,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlainNumericInput -->
-        <test-method status="PASS" signature="testPlainSpecialCharacterInput()[pri:0, instance:TextParserTest@1810399e]" name="testPlainSpecialCharacterInput" duration-ms="1" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+        <test-method status="PASS" signature="testPlainSpecialCharacterInput()[pri:0, instance:TextParserTest@1810399e]" name="testPlainSpecialCharacterInput" duration-ms="1" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
           <exception class="java.lang.Exception">
             <full-stacktrace>
               <![CDATA[java.lang.Exception
@@ -134,7 +134,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlainSpecialCharacterInput -->
-        <test-method status="PASS" signature="testSimpleParse()[pri:0, instance:TextParserTest@1810399e]" name="testSimpleParse" duration-ms="1" started-at="2019-07-30T23:25:44Z" finished-at="2019-07-30T23:25:44Z">
+        <test-method status="PASS" signature="testSimpleParse()[pri:0, instance:TextParserTest@1810399e]" name="testSimpleParse" duration-ms="1" started-at="2019-07-30T23:34:47Z" finished-at="2019-07-30T23:34:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSimpleParse -->
